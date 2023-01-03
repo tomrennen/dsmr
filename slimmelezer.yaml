@@ -88,37 +88,43 @@ sensor:
     energy_delivered_tariff1:
       name: "Energy Consumed Tariff 1"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     energy_delivered_tariff2:
       name: "Energy Consumed Tariff 2"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     energy_returned_lux:
       name: "Energy Produced Luxembourg"
     energy_returned_tariff1:
       name: "Energy Produced Tariff 1"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     energy_returned_tariff2:
       name: "Energy Produced Tariff 2"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     power_delivered:
       name: "Power Consumed"
       accuracy_decimals: 3
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     power_returned:
       name: "Power Produced"
       accuracy_decimals: 3
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     electricity_failures:
       name: "Electricity Failures"
       icon: mdi:alert
@@ -128,39 +134,46 @@ sensor:
     voltage_l1:
       name: "Voltage Phase 1"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     voltage_l2:
       name: "Voltage Phase 2"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     voltage_l3:
       name: "Voltage Phase 3"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     current_l1:
       name: "Current Phase 1"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     current_l2:
       name: "Current Phase 2"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     current_l3:
       name: "Current Phase 3"
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     power_delivered_l1:
       name: "Power Consumed Phase 1"
       accuracy_decimals: 3
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     power_delivered_l2:
       name: "Power Consumed Phase 2"
       accuracy_decimals: 3
@@ -171,26 +184,30 @@ sensor:
       name: "Power Consumed Phase 3"
       accuracy_decimals: 3
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     power_returned_l1:
       name: "Power Produced Phase 1"
       accuracy_decimals: 3
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     power_returned_l2:
       name: "Power Produced Phase 2"
       accuracy_decimals: 3
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     power_returned_l3:
       name: "Power Produced Phase 3"
       accuracy_decimals: 3
       filters:
-      - throttle: 5s
-      - heartbeat: 30s
+      - or:
+        - throttle_average: 5s
+        - heartbeat: 15s
     gas_delivered:
       name: "Gas Consumed"
     gas_delivered_be:
