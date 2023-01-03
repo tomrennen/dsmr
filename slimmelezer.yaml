@@ -116,9 +116,13 @@ sensor:
     electricity_failures:
       name: "Electricity Failures"
       icon: mdi:alert
+      filters:
+      - throttle: 60s
     electricity_long_failures:
       name: "Long Electricity Failures"
       icon: mdi:alert
+      filters:
+      - throttle: 60s
     voltage_l1:
       name: "Voltage Phase 1"
       filters:
@@ -192,7 +196,6 @@ text_sensor:
       name: "DSMR Version"
     p1_version_be:
       name: "DSMR Version Belgium"
-    update_interval: 60s
   - platform: wifi_info
     ip_address:
       name: "SlimmeLezer IP Address"
@@ -200,8 +203,6 @@ text_sensor:
       name: "SlimmeLezer Wi-Fi SSID"
     bssid:
       name: "SlimmeLezer Wi-Fi BSSID"
-    update_interval: 60s
   - platform: version
     name: "ESPHome Version"
     hide_timestamp: true
-    update_interval: 60s
